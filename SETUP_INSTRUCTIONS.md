@@ -7,11 +7,18 @@
 
 ## Installation Steps
 
-### 1. Extract the Project
+### 1. Clone the Repository
 ```bash
-# Extract the zip file to your desired location
-# Navigate to the project directory
-cd job-smart-selector-main(final)
+# Clone from GitHub
+git clone https://github.com/ghuhn/langgraph-screener.git
+cd langgraph-screener
+```
+
+**Alternative: Download ZIP**
+```bash
+# If downloading as ZIP file
+# Extract to your desired location and navigate to the project directory
+cd langgraph-screener
 ```
 
 ### 2. Install Dependencies

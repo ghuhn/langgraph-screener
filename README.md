@@ -1,33 +1,43 @@
 
-# JobDeskAI - Multi-Agent Resume Screener
+# LangGraph Resume Screener
 
-An enterprise-grade AI-powered resume screening and candidate recommendation system built with React, TypeScript, and Google's Gemini AI.
+An enterprise-grade AI-powered resume screening system with LangGraph workflow implementation, built with React, TypeScript, and Google's Gemini AI.
 
 ## 🚀 Features
 
 ### Core Functionality
 - **Smart Resume Upload**: Drag-and-drop interface supporting PDF and DOCX files
 - **Job Description Builder**: Comprehensive form for defining role requirements
-- **Multi-Agent AI Analysis**: Four specialized AI agents working in orchestration
+- **LangGraph Workflow**: Custom graph-based multi-agent processing system
+- **Real-time Progress**: Live agent status updates and progress tracking
 - **Top 3 Recommendations**: Ranked candidates with detailed explanations
-- **Download Reports**: Export summaries and detailed analysis reports
+- **Test Interface**: Dedicated testing page at `/test-langgraph`
 - **Responsive Design**: Professional, enterprise-ready interface
 
-### AI Multi-Agent System
+### LangGraph Multi-Agent System
 1. **Recruiter Agent**: Extracts education, skills, tools, and experience from resumes
 2. **Analyst Agent**: Matches extracted features to job description using scoring algorithm
 3. **HR Agent**: Evaluates tone, soft skills, and identifies potential red flags
 4. **Recommender Agent**: Ranks resumes and suggests top 3 candidates for the role
 
+### LangGraph Features
+- **Sequential Workflow**: Agents execute in optimized order with state management
+- **Progress Tracking**: Real-time status updates for each agent
+- **Error Handling**: Robust error recovery with fallback processing
+- **State Persistence**: Centralized state management across the workflow
+- **Backward Compatibility**: Seamless integration with existing codebase
+
 ## 🛠 Tech Stack
 
 - **Frontend**: React 18, TypeScript, Vite
+- **Workflow**: Custom LangGraph-inspired system
 - **UI Components**: shadcn/ui, Tailwind CSS
 - **Routing**: React Router v6
-- **State Management**: React Query (TanStack Query)
+- **State Management**: React Query (TanStack Query) + Custom workflow state
 - **AI Integration**: Google Gemini Pro API
 - **Icons**: Lucide React
 - **Animations**: CSS transitions and Tailwind animations
+- **Dependencies**: @langchain/core, @langchain/langgraph
 
 ## 📱 Application Flow
 
@@ -49,8 +59,8 @@ An enterprise-grade AI-powered resume screening and candidate recommendation sys
 
 1. **Clone the repository**
 ```bash
-git clone <repository-url>
-cd job-desk-ai-screener
+git clone https://github.com/ghuhn/langgraph-screener.git
+cd langgraph-screener
 ```
 
 2. **Install dependencies**
@@ -88,19 +98,34 @@ The AI agents evaluate candidates across multiple dimensions:
 
 ## 🚀 Deployment
 
-The application is ready for deployment on any modern hosting platform:
+The application is deployed on Vercel and ready for production:
 
-- **Vercel**: `npm run build` then upload dist folder
-- **Netlify**: Connect repository for automatic deployments
-- **GitHub Pages**: Use GitHub Actions for automated builds
+- **Live Demo**: [https://langgraph-screener.vercel.app](https://langgraph-screener.vercel.app)
+- **Platform**: Vercel (automatic deployments from main branch)
+- **Environment**: Set `VITE_GEMINI_API_KEY` in Vercel dashboard
+- **Build Command**: `npm run build`
+- **Output Directory**: `dist`
 
-## 🎯 Future Enhancements
+### Testing the LangGraph Implementation
+- **Test Interface**: Visit `/test-langgraph` to test the workflow
+- **Sample Data**: Built-in test data for immediate validation
+- **Real-time Monitoring**: Watch agent progress and state updates
 
-- **Feedback Agent**: Learn from rejected candidates to improve logic
-- **Resume Parsing**: Direct PDF/DOCX text extraction
-- **Vector Search**: Semantic similarity matching
-- **Interview Scheduling**: Integration with calendar systems
-- **Analytics Dashboard**: Hiring metrics and insights
+## 🎯 LangGraph Implementation Details
+
+### Current Features
+- **Custom Workflow System**: LangGraph-inspired sequential processing
+- **Real-time State Management**: Live progress tracking and updates
+- **Agent Orchestration**: Coordinated multi-agent execution
+- **Error Recovery**: Robust fallback mechanisms
+- **Test Infrastructure**: Comprehensive testing and validation
+
+### Future Enhancements
+- **Parallel Processing**: Run compatible agents simultaneously
+- **Dynamic Routing**: Conditional workflow paths based on data
+- **Agent Composition**: Build complex agents from simpler components
+- **Workflow Persistence**: Save and resume processing state
+- **Performance Metrics**: Detailed analytics and monitoring
 
 ## 📄 License
 
@@ -112,4 +137,4 @@ This is a capstone project demonstrating enterprise-level development practices.
 
 ---
 
-**Built with ❤️ using React, TypeScript, and AI**
+**Built with ❤️ using React, TypeScript, LangGraph, and AI**

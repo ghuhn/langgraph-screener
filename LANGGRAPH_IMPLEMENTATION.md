@@ -157,6 +157,14 @@ Each agent can be configured with:
 - `@langchain/langgraph`: Core LangGraph functionality
 - `@langchain/core`: LangChain core utilities
 
+## Live Deployment
+
+- **Repository**: https://github.com/ghuhn/langgraph-screener
+- **Live Demo**: https://langgraph-screener.vercel.app
+- **Test Interface**: https://langgraph-screener.vercel.app/test-langgraph
+- **Platform**: Vercel (automatic deployments)
+- **Environment**: Production-ready with API key configured
+
 ## Files Modified
 
 - `src/types/langgraph.ts` - New types and interfaces
