@@ -59,6 +59,12 @@ The primary objective was to implement a minimal LangGraph workflow system in th
 4. **Test LangGraph**: Visit `http://localhost:8081/test-langgraph` for testing
 5. **Normal Usage**: Use the application as before - LangGraph runs automatically
 
+## Deployment
+- **Platform**: Vercel (configured with vercel.json)
+- **Dependencies**: Managed via package.json (Node.js/npm)
+- **Build Command**: `npm run build`
+- **Environment**: Set VITE_GEMINI_API_KEY in Vercel dashboard
+
 ## Additional Resources
 - The implementation maintains full compatibility with the existing Job Smart Selector workflow
 - Test data and sample resumes are included in the test utilities
