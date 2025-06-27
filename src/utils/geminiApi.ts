@@ -62,5 +62,7 @@ export class GeminiAPI {
   }
 }
 
-// Updated API key and model endpoint
-export const geminiAPI = new GeminiAPI('AIzaSyD992IvUFwDu3tml50Or_uKSokdzmHnHtY');
+// Use environment variable for API key, with fallback for development
+export const geminiAPI = new GeminiAPI(
+  import.meta.env.VITE_GEMINI_API_KEY || 'AIzaSyD992IvUFwDu3tml50Or_uKSokdzmHnHtY'
+);
